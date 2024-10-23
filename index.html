@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="pageTitle">RGB TO HEX</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color: black; color: white">
+    <div class="mainDiv">
+      <div id="controlButtons">
+        <button id="convertHEXButton">RGB to HEX</button>
+        <button id="convertRGBButton">HEX to RGB</button>
+      </div>
+      <div id="convertHEX" class="convertBox">
+        <h1 class="title">RGB to HEX</h3>
+        <div class="box">
+          <div class="gridRGB">
+            <div class="rgbDiv">
+              <header>(R)ed</header>
+              <input
+              class="rgbInput"
+              placeholder="0"
+              type="text"
+              id="red"
+              maxlength="3"
+              max="255"
+              min="0"
+              />
+            </div>
+            <div class="rgbDiv">
+              <header>(G)reen</header>
+              <input
+              class="rgbInput"
+              placeholder="0"
+              type="text"
+              id="green"
+              maxlength="3"
+              max="255"
+              min="0"
+              />
+            </div>
+            <div class="rgbDiv">
+              <header>(B)lue</header>
+              <input
+              class="rgbInput"
+              placeholder="0"
+              type="text"
+              id="blue"
+              maxlength="3"
+              max="255"
+              min="0"
+              />
+            </div>
+          </div>
+        <div class="rgbDiv">
+          <header></header>
+          <button class="generateButton" id="generateHexButton">Convert to HEX Code</button>
+        </div>
+
+        </div>
+        <div class="resultDiv">
+          <div class="result">
+            <span>HEX Code</span> <button id="hex_code"></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="convertRGB" class="convertBox">
+        <h1 class="title">HEX to RGB</h3>
+        <div class="box">
+          <div class="rgbDiv">
+            <header>Hex Code</header>
+            <input
+            placeholder="#000000"
+            type="text"
+            id="hex"
+            maxlength="7"
+          />
+          </div>
+          <div class="rgbDiv">
+          <header></header>
+          <button class="generateButton" id="generateRgbButton">Generate to RGB Code</button>
+          </div>
+        </div>
+        
+        <div class="resultDiv">
+          <div class="result">
+            <span>RGB Code</span> <button id="rgb_code"></button>
+          </div>
+        </div>
+      </div>
+
+    <a href="https://www.linkedin.com/in/bahad%C4%B1r-hakan-y%C3%BCksel-38457426a/" id="me">Bahadır Hakan Yüksel</a>
+
+    </div>
+
+    <script src="frontControl.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
